@@ -32,8 +32,11 @@ Por no tener Foward Secrecy con los navegadores referencia, tu rango va a estar 
 
 ![image](https://github.com/rvalverdecros/Proyecto9_Bastionado/assets/91952085/b5be2a5d-dc6e-4f34-af8e-c2db689dcd0c)
 
+Como vemos, donde vaya es en el Ceritficado, porque no es seguro, ni se puede confiar en el:
 
-    - **ERR_SSL_VERSION_OR_CIPHER_MISMATCH →** Si sale este error, es debido a que usa una versión obsoleta de TLS o un conjunto de cifrado que con los navegadores no son compatibles. Para remediarlo, hay que actualizar la versión TLS de el certificado SSL y el conjunto de cifrado para poder arreglar el error.
+![image](https://github.com/rvalverdecros/Proyecto9_Bastionado/assets/91952085/f847f9c3-096d-4f10-bf25-1ad035885604)
+
+ - **ERR_SSL_VERSION_OR_CIPHER_MISMATCH →** Si sale este error, es debido a que usa una versión obsoleta de TLS o un conjunto de cifrado que con los navegadores no son compatibles. Para remediarlo, hay que actualizar la versión TLS de el certificado SSL y el conjunto de cifrado para poder arreglar el error.
 
 
   ![image](https://github.com/rvalverdecros/Proyecto9_Bastionado/assets/91952085/d718b7dd-2383-4acb-8432-f2de7c3eec9b)
