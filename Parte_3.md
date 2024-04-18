@@ -25,8 +25,13 @@ En tema de cifrado de seguridad y certificado (Que para mi son los aspectos más
 Por no tener Foward Secrecy con los navegadores referencia, tu rango va a estar en B y no subirá más, al menos que remedie este problema.
 
 - Certificados Inválidos:
-    - **ERR_SSL_WEAK_EPHEMERAL_DH_KEY →** Este error ocurre debido a que el código de seguridad esta obsoleto o esta mal configurado. Para remediar este problema, se puede actualizar el servidor para que sea compatible con ECDHE y desactiva DHE. Si ECDH no está disponible, puedes desactivar todos los conjuntos de algoritmo de cifrado DHE y utilizar RSA simple.
-    - **NET::ERR_CERT_AUTHORITY_INVALID →** Este error aparecerá cuando haya expirado la fecha de caducidad del instalado en los servidores del sitto web. Por lo que, para resoverlo, se tiene que renovar su certificado. Muchas veces, Google puede ponerlo, aunque no sea verdad. Esto puede pasar debido a que la configuración de la fecha y hora es incorrecta y se establece una fecha futura posterior a la fecha de vencimiento del certificado instalado. Para ello, tendremos que verificar bien la fecha y la hora en la configuración del sistema de sus dispositivos.
+    - **ERR_CERT_COMMON_NAME_INVALID →** Este error ocurre debido a que la información del certificado digital no concuerda con el dominio. Para solucionar el error, primero comprobaremos los DNS, del ordenador, router y hosts. También tendríamos que comporbar que el certificado sea el adecuado para esa página y si es necesario, tendríamos que volver a emitirlo. Ejemplo:
+
+![image](https://github.com/rvalverdecros/Proyecto9_Bastionado/assets/91952085/f46d8454-2f42-4b97-8677-269e5fd91756)
+
+Lo que aparece en SSLlabs es este, el cúal no puede comprobar el certificado, porque el nombre del certificado no coincide con el suyo propio.
+
+- **NET::ERR_CERT_AUTHORITY_INVALID →** Este error aparecerá cuando haya expirado la fecha de caducidad del instalado en los servidores del sitto web. Por lo que, para resoverlo, se tiene que renovar su certificado. Muchas veces, Google puede ponerlo, aunque no sea verdad. Esto puede pasar debido a que la configuración de la fecha y hora es incorrecta y se establece una fecha futura posterior a la fecha de vencimiento del certificado instalado. Para ello, tendremos que verificar bien la fecha y la hora en la configuración del sistema de sus dispositivos. Ejemplo: 
 
 ![image](https://github.com/rvalverdecros/Proyecto9_Bastionado/assets/91952085/7bbbba4f-d3a5-4e8b-8812-a64407be078b)
 
@@ -36,7 +41,7 @@ Como vemos, donde vaya es en el Ceritficado, porque no es seguro, ni se puede co
 
 ![image](https://github.com/rvalverdecros/Proyecto9_Bastionado/assets/91952085/f847f9c3-096d-4f10-bf25-1ad035885604)
 
- - **ERR_SSL_VERSION_OR_CIPHER_MISMATCH →** Si sale este error, es debido a que usa una versión obsoleta de TLS o un conjunto de cifrado que con los navegadores no son compatibles. Para remediarlo, hay que actualizar la versión TLS de el certificado SSL y el conjunto de cifrado para poder arreglar el error.
+ - **ERR_SSL_VERSION_OR_CIPHER_MISMATCH →** Si sale este error, es debido a que usa una versión obsoleta de TLS o un conjunto de cifrado que con los navegadores no son compatibles. Para remediarlo, hay que actualizar la versión TLS de el certificado SSL y el conjunto de cifrado para poder arreglar el error. Ejemplo:
 
 
   ![image](https://github.com/rvalverdecros/Proyecto9_Bastionado/assets/91952085/d718b7dd-2383-4acb-8432-f2de7c3eec9b)
