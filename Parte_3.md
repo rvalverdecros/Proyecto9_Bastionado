@@ -25,7 +25,7 @@ En tema de cifrado de seguridad y certificado (Que para mi son los aspectos más
 Por no tener Foward Secrecy con los navegadores referencia, tu rango va a estar en B y no subirá más, al menos que remedie este problema.
 
 - Certificados Inválidos:
-    - **ERR_CERT_COMMON_NAME_INVALID →** Este error ocurre debido a que la información del certificado digital no concuerda con el dominio. Para solucionar el error, primero comprobaremos los DNS, del ordenador, router y hosts. También tendríamos que comporbar que el certificado sea el adecuado para esa página y si es necesario, tendríamos que volver a emitirlo. Ejemplo:
+- **ERR_CERT_COMMON_NAME_INVALID →** Este error ocurre debido a que la información del certificado digital no concuerda con el dominio. Para solucionar el error, primero comprobaremos los DNS, del ordenador, router y hosts. También tendríamos que comporbar que el certificado sea el adecuado para esa página y si es necesario, tendríamos que volver a emitirlo. Ejemplo:
 
 ![image](https://github.com/rvalverdecros/Proyecto9_Bastionado/assets/91952085/f46d8454-2f42-4b97-8677-269e5fd91756)
 
